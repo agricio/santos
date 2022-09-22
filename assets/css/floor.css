@@ -50,9 +50,13 @@ body {
 
 #topContact {
     margin: 0;
-    padding: 0;
+    padding-left: 10px;
     align-items: initial;
     cursor:text;
+    display: flex;
+    flex-direction: row;
+    align-items:baseline;
+    
 }
 
 #topContact p{
@@ -62,6 +66,7 @@ body {
 }
 
 #topContact strong{
+    margin-left: 15px;
     font-size: 20px;
     font-weight: 700;
     color: #f1b100;
@@ -164,6 +169,7 @@ footer {
 
 footer ul {
     display: grid;
+    margin-top: 11px;
     flex-direction: column;
     margin-right: 50px;
     margin-left: 10px;
@@ -195,16 +201,39 @@ footer img {
     margin-right: 10px;
 }
 
+#phones {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#phones strong {
+    font-size: 12pt;
+}
+
 #info {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 10px;
+    padding: 6px;
     margin-right: 50px;
 }
 
 
 @media screen and (max-width: 680px) {
+
+    #topContact {
+        flex-direction:column;
+        align-items:baseline;
+    }
+
+    #topContact p{
+        font-size: 11px;
+    }
+    #topContact strong{
+        margin-left: 0;
+        font-size: 11px;
+    }
 
     #container img {
         width: 70%;
